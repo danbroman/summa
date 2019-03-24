@@ -30,8 +30,8 @@ WORKDIR /code
 ADD . /code
 
 # fetch tags and build summa
-RUN git fetch --tags && make -C build/ -f Makefile
-
+# RUN git fetch --tags && make -C build/ -f Makefile
+RUN make -C build/ -f Makefile
 # run summa when running the docker image
 WORKDIR bin
 ENTRYPOINT ["./summa.exe"]
