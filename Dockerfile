@@ -10,7 +10,8 @@ RUN apt-get update && \
     make \
     libnetcdff-dev \
     liblapack-dev \
-    vim
+    vim \
+    ssh-client
 
 # install gfortran-6
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test -y \
