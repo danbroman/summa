@@ -3,6 +3,7 @@ FROM ubuntu:xenial
 # install only the packages that are needed
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+    apt-utils \
     software-properties-common python-software-properties \
     ca-certificates \
     git \
